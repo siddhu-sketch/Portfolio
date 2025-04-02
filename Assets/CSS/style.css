@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(image.png);
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: darkred;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: red;
+    text-shadow: 2px 2px black;
+}
+
+.hero p {
+    font-size: 16px;
+    color: black;
+}
+
+.arrow {
+    font-size: 30px;
+    margin-top: 10px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.about-section {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-container {
+    width: 60%;
+    max-width: 800px;
+    background: rgba(192, 192, 192, 0.8); /* Semi-transparent gray box */
+    padding: 20px;
+    border: 5px solid #444;
+    box-shadow: 5px 5px 0px black;
+    text-align: center;
+    position: relative;
+}
+
+/* About Header */
+.about-header {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff6b6b;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px black;
+}
+
+/* About Content */
+.about-content {
+    padding-top: 30px;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contact Container */
+.contact-container {
+    width: 60%;
+    max-width: 600px;
+    background: rgba(192, 128, 128, 0.6); /* Semi-transparent pink box */
+    padding: 20px;
+    border: 5px solid #444;
+    box-shadow: 5px 5px 0px black;
+    text-align: left;
+    position: relative;
+    justify-content: left;
+}
+
+/* Contact Header */
+.contact-header {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    background: white;
+    color: #8B0000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px black;
+}
+
+/* Form Labels */
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin: 10px 0 5px;
+}
+
+/* Input Fields */
+.contact-form input, 
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    background: #ddd;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Submit Button */
+.contact-form button {
+    margin-top: 15px;
+    background: white;
+    color: red;
+    border: 3px solid black;
+    padding: 10px 15px;
+    font-size: 14px;
+    box-shadow: 3px 3px 0px black;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.contact-form button:hover {
+    background: red;
+    color: white;
+}
+
+
+/* Work Section */
+.work-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Work Button */
+.work-button {
+    background: white;
+    color: #8B0000;
+    border: 6px solid black;
+    padding: 10px 40px;
+    font-size: 24px;
+    box-shadow: 4px 4px 0px black;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+.work-button:hover {
+    background: #8B0000;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background: #A3D3FF;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+/* Footer Content */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* Contact & Social Links */
+.contact, .social {
+    text-align: left;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+/* Social Media Icons */
+.social a {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social a:hover {
+    color: darkred;
+}
+
+/* Copyright Text */
+.copyright {
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
+}
